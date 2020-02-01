@@ -1,8 +1,8 @@
-package service;
+package com.orange.gmall.service;
 
 
-import bean.UmsMember;
-import bean.UmsMemberReceiveAddress;
+import com.orange.gmall.bean.UmsMember;
+import com.orange.gmall.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 

@@ -1,6 +1,8 @@
-package com.orange.gmall.gmalluser.mapper;
+package com.orange.gmall.gmall.user.mapper;
 
-import com.orange.gmall.gmalluser.dao.UmsMember;
+
+
+import com.orange.gmall.bean.UmsMember;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

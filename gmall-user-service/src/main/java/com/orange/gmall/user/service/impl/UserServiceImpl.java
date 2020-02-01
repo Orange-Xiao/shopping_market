@@ -1,17 +1,20 @@
-package com.orange.gmall.gmalluser.service.impl;
+package com.orange.gmall.user.service.impl;
 
-import com.orange.gmall.gmalluser.dao.UmsMember;
-import com.orange.gmall.gmalluser.dao.UmsMemberReceiveAddress;
-import com.orange.gmall.gmalluser.mapper.UmsMemberReceiveAddressMapper;
-import com.orange.gmall.gmalluser.mapper.UserMapper;
-import com.orange.gmall.gmalluser.service.UserService;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.orange.gmall.bean.UmsMember;
+import com.orange.gmall.bean.UmsMemberReceiveAddress;
+
+import com.orange.gmall.user.mapper.UmsMemberReceiveAddressMapper;
+import com.orange.gmall.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.orange.gmall.service.UserService;
 
 import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
+
     @Autowired
     UserMapper userMapper;
 
@@ -21,9 +24,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UmsMember> getAllUser() {
 
-        List<UmsMember> umsMemberList = userMapper.selectAll();//userMapper.selectAllUser();
+        List<UmsMember> umsMembers = userMapper.selectAll();//userMapper.selectAllUser();
 
-        return umsMemberList;
+        return umsMembers;
     }
 
     @Override
@@ -35,9 +38,9 @@ public class UserServiceImpl implements UserService {
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
 
 
-//        Example example = new Example(UmsMemberReceiveAddress.class);
-//        example.createCriteria().andEqualTo("memberId",memberId);
-//        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(example);
+//       Example example = new Example(UmsMemberReceiveAddress.class);
+//       example.createCriteria().andEqualTo("memberId",memberId);
+//       List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(example);
 
         return umsMemberReceiveAddresses;
     }

@@ -1,4 +1,4 @@
-package com.orange.gmall.gmalluser;
+package com.orange.gmall.gmall.user;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

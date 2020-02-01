@@ -1,8 +1,9 @@
-package com.orange.gmall.gmalluser.controller;
+package com.orange.gmall.gmall.user.controller;
 
-import com.orange.gmall.gmalluser.dao.UmsMember;
-import com.orange.gmall.gmalluser.dao.UmsMemberReceiveAddress;
-import com.orange.gmall.gmalluser.service.UserService;
+
+import com.orange.gmall.bean.UmsMember;
+import com.orange.gmall.bean.UmsMemberReceiveAddress;
+import com.orange.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

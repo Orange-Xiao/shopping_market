@@ -1,4 +1,5 @@
-package com.orange.gmall.gmalluser.dao;
+package com.orange.gmall.bean;
+
 import javax.persistence.Id;
 import java.io.Serializable;
 
@@ -7,8 +8,8 @@ public class UmsMemberReceiveAddress implements Serializable {
     @Id
     private String id;
     private String memberId;
-    private String name;
-    private String phoneNumber;
+    private String  name;
+    private String  phoneNumber;
     private int defaultStatus;
     private String postCode;
     private String province;
@@ -96,4 +97,3 @@ public class UmsMemberReceiveAddress implements Serializable {
         this.detailAddress = detailAddress;
     }
 }
-
